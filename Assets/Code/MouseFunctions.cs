@@ -16,7 +16,7 @@ public class MouseFunctions : MonoBehaviour {
         SceneID = SceneManager.GetActiveScene().name; //Get Scene Name, then set it to SceneID for reloading (Line 44)
     }
 
-	void FixedUpdate() //Runs at a fixed interveal. Update() runs per-frame. FixedUpdate will not change, whereas Update changed based on your current Framerate
+    void FixedUpdate() //Runs at a fixed interveal. Update() runs per-frame. FixedUpdate will not change, whereas Update changed based on your current Framerate
     {
         RaycastHit hit; //Creates a list of hit objects
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition); //Get Cursor position on Screen
