@@ -12,8 +12,8 @@ public class MouseFunctions : MonoBehaviour {
 
     void Start()
     {
-        ResetButton.onClick.AddListener(RefreshScene); //Force Reset Button to use the Refresh Scene function (Line 42)
-        SceneID = SceneManager.GetActiveScene().name; //Get Scene Name, then set it to SceneID for reloading (Line 44)
+        ResetButton.onClick.AddListener(RefreshScene); //Force Reset Button to use the Refresh Scene function (Line 39)
+        SceneID = SceneManager.GetActiveScene().name; //Get Scene Name, then set it to SceneID for reloading (Line 41)
     }
 
     void FixedUpdate() //Runs at a fixed interveal. Update() runs per-frame. FixedUpdate will not change, whereas Update changed based on your current Framerate
